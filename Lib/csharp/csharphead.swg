@@ -182,65 +182,65 @@ SWIGEXPORT void SWIGSTDCALL SWIGRegisterExceptionArgumentCallbacks_$module(
    
     [$imclassname.MonoPInvokeCallback(typeof(ExceptionDelegate))]
     static void SetPendingApplicationException(global::System.IntPtr message) {
-      SWIGPendingException.Set(new global::System.ApplicationException(global::System.Runtime.InteropServices.Marshal.PtrToStringUTF8(message), SWIGPendingException.Retrieve()));
+      SWIGPendingException.Set(new global::System.ApplicationException(global::System.Runtime.InteropServices.Marshal.PtrToStringAnsi(message), SWIGPendingException.Retrieve()));
     }
     [$imclassname.MonoPInvokeCallback(typeof(ExceptionDelegate))]
     static void SetPendingArithmeticException(global::System.IntPtr message) {
-      SWIGPendingException.Set(new global::System.ArithmeticException(global::System.Runtime.InteropServices.Marshal.PtrToStringUTF8(message), SWIGPendingException.Retrieve()));
+      SWIGPendingException.Set(new global::System.ArithmeticException(global::System.Runtime.InteropServices.Marshal.PtrToStringAnsi(message), SWIGPendingException.Retrieve()));
     }
     [$imclassname.MonoPInvokeCallback(typeof(ExceptionDelegate))]
     static void SetPendingDivideByZeroException(global::System.IntPtr message) {
-      SWIGPendingException.Set(new global::System.DivideByZeroException(global::System.Runtime.InteropServices.Marshal.PtrToStringUTF8(message), SWIGPendingException.Retrieve()));
+      SWIGPendingException.Set(new global::System.DivideByZeroException(global::System.Runtime.InteropServices.Marshal.PtrToStringAnsi(message), SWIGPendingException.Retrieve()));
     }
     [$imclassname.MonoPInvokeCallback(typeof(ExceptionDelegate))]
     static void SetPendingIndexOutOfRangeException(global::System.IntPtr message) {
-      SWIGPendingException.Set(new global::System.IndexOutOfRangeException(global::System.Runtime.InteropServices.Marshal.PtrToStringUTF8(message), SWIGPendingException.Retrieve()));
+      SWIGPendingException.Set(new global::System.IndexOutOfRangeException(global::System.Runtime.InteropServices.Marshal.PtrToStringAnsi(message), SWIGPendingException.Retrieve()));
     }
     [$imclassname.MonoPInvokeCallback(typeof(ExceptionDelegate))]
     static void SetPendingInvalidCastException(global::System.IntPtr message) {
-      SWIGPendingException.Set(new global::System.InvalidCastException(global::System.Runtime.InteropServices.Marshal.PtrToStringUTF8(message), SWIGPendingException.Retrieve()));
+      SWIGPendingException.Set(new global::System.InvalidCastException(global::System.Runtime.InteropServices.Marshal.PtrToStringAnsi(message), SWIGPendingException.Retrieve()));
     }
     [$imclassname.MonoPInvokeCallback(typeof(ExceptionDelegate))]
     static void SetPendingInvalidOperationException(global::System.IntPtr message) {
-      SWIGPendingException.Set(new global::System.InvalidOperationException(global::System.Runtime.InteropServices.Marshal.PtrToStringUTF8(message), SWIGPendingException.Retrieve()));
+      SWIGPendingException.Set(new global::System.InvalidOperationException(global::System.Runtime.InteropServices.Marshal.PtrToStringAnsi(message), SWIGPendingException.Retrieve()));
     }
     [$imclassname.MonoPInvokeCallback(typeof(ExceptionDelegate))]
     static void SetPendingIOException(global::System.IntPtr message) {
-      SWIGPendingException.Set(new global::System.IO.IOException(global::System.Runtime.InteropServices.Marshal.PtrToStringUTF8(message), SWIGPendingException.Retrieve()));
+      SWIGPendingException.Set(new global::System.IO.IOException(global::System.Runtime.InteropServices.Marshal.PtrToStringAnsi(message), SWIGPendingException.Retrieve()));
     }
     [$imclassname.MonoPInvokeCallback(typeof(ExceptionDelegate))]
     static void SetPendingNullReferenceException(global::System.IntPtr message) {
-      SWIGPendingException.Set(new global::System.NullReferenceException(global::System.Runtime.InteropServices.Marshal.PtrToStringUTF8(message), SWIGPendingException.Retrieve()));
+      SWIGPendingException.Set(new global::System.NullReferenceException(global::System.Runtime.InteropServices.Marshal.PtrToStringAnsi(message), SWIGPendingException.Retrieve()));
     }
     [$imclassname.MonoPInvokeCallback(typeof(ExceptionDelegate))]
     static void SetPendingOutOfMemoryException(global::System.IntPtr message) {
-      SWIGPendingException.Set(new global::System.OutOfMemoryException(global::System.Runtime.InteropServices.Marshal.PtrToStringUTF8(message), SWIGPendingException.Retrieve()));
+      SWIGPendingException.Set(new global::System.OutOfMemoryException(global::System.Runtime.InteropServices.Marshal.PtrToStringAnsi(message), SWIGPendingException.Retrieve()));
     }
     [$imclassname.MonoPInvokeCallback(typeof(ExceptionDelegate))]
     static void SetPendingOverflowException(global::System.IntPtr message) {
-      SWIGPendingException.Set(new global::System.OverflowException(global::System.Runtime.InteropServices.Marshal.PtrToStringUTF8(message), SWIGPendingException.Retrieve()));
+      SWIGPendingException.Set(new global::System.OverflowException(global::System.Runtime.InteropServices.Marshal.PtrToStringAnsi(message), SWIGPendingException.Retrieve()));
     }
     [$imclassname.MonoPInvokeCallback(typeof(ExceptionDelegate))]
     static void SetPendingSystemException(global::System.IntPtr message) {
-      SWIGPendingException.Set(new global::System.SystemException(global::System.Runtime.InteropServices.Marshal.PtrToStringUTF8(message), SWIGPendingException.Retrieve()));
+      SWIGPendingException.Set(new global::System.SystemException(global::System.Runtime.InteropServices.Marshal.PtrToStringAnsi(message), SWIGPendingException.Retrieve()));
     }
     [$imclassname.MonoPInvokeCallback(typeof(ExceptionArgumentDelegate))]
     static void SetPendingArgumentException(global::System.IntPtr message, global::System.IntPtr paramName) {
-      SWIGPendingException.Set(new global::System.ArgumentException(global::System.Runtime.InteropServices.Marshal.PtrToStringUTF8(message), global::System.Runtime.InteropServices.Marshal.PtrToStringUTF8(paramName), SWIGPendingException.Retrieve()));
+      SWIGPendingException.Set(new global::System.ArgumentException(global::System.Runtime.InteropServices.Marshal.PtrToStringAnsi(message), global::System.Runtime.InteropServices.Marshal.PtrToStringAnsi(paramName), SWIGPendingException.Retrieve()));
     }
     [$imclassname.MonoPInvokeCallback(typeof(ExceptionArgumentDelegate))]
     static void SetPendingArgumentNullException(global::System.IntPtr message, global::System.IntPtr paramName) {
       global::System.Exception e = SWIGPendingException.Retrieve();
-      string message_text = global::System.Runtime.InteropServices.Marshal.PtrToStringUTF8(message);
+      string message_text = global::System.Runtime.InteropServices.Marshal.PtrToStringAnsi(message);
       if (e != null) message_text += " Inner Exception: " + e.Message;
-      SWIGPendingException.Set(new global::System.ArgumentNullException(global::System.Runtime.InteropServices.Marshal.PtrToStringUTF8(paramName), message_text));
+      SWIGPendingException.Set(new global::System.ArgumentNullException(global::System.Runtime.InteropServices.Marshal.PtrToStringAnsi(paramName), message_text));
     }
     [$imclassname.MonoPInvokeCallback(typeof(ExceptionArgumentDelegate))]
     static void SetPendingArgumentOutOfRangeException(global::System.IntPtr message, global::System.IntPtr paramName) {
       global::System.Exception e = SWIGPendingException.Retrieve();
-      string message_text = global::System.Runtime.InteropServices.Marshal.PtrToStringUTF8(message);
+      string message_text = global::System.Runtime.InteropServices.Marshal.PtrToStringAnsi(message);
       if (e != null) message_text += " Inner Exception: " + e.Message;
-      SWIGPendingException.Set(new global::System.ArgumentOutOfRangeException(global::System.Runtime.InteropServices.Marshal.PtrToStringUTF8(paramName), message_text));
+      SWIGPendingException.Set(new global::System.ArgumentOutOfRangeException(global::System.Runtime.InteropServices.Marshal.PtrToStringAnsi(paramName), message_text));
     }
     static SWIGExceptionHelper() {
       SWIGRegisterExceptionCallbacks_$module(
