@@ -27,12 +27,14 @@
   }
 %}
 %pragma(csharp) modulecode=%{
+#if NET5_0_OR_GREATER  
   [global::System.Runtime.CompilerServices.ModuleInitializer]
   internal static void Init()
   {
     System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof($imclassname.SWIGGCHandleHelper).TypeHandle);
     System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof($imclassname.SWIGPendingException).TypeHandle);
   }
+#endif
 %}
 
 #endif

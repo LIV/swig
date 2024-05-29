@@ -1999,7 +1999,8 @@ public:
       Printf(proxy_class_code, ");\n");
       Printf(proxy_class_code, "  }\n");
       if(mono_aot_compatibility_flag){
-        Printf(proxy_class_code, "  [global::System.Runtime.CompilerServices.ModuleInitializer]\n  internal static void SwigDirectorConnectDispatchers() {\n");
+	Printf(proxy_class_code, "#if NET5_0_OR_GREATER // HACKHACK LIV: This is a bodge to run LIV with Untiy 5.x with .NET2.0\n");
+	Printf(proxy_class_code, "  [global::System.Runtime.CompilerServices.ModuleInitializer]\n  internal static void SwigDirectorConnectDispatchers() {\n");
         Printf(proxy_class_code, "    %s.%s_dispatchers(", imclass_name, director_connect_method_name);
         for (i = first_class_dmethod; i < curr_class_dmethod; ++i) {
           UpcallData *udata = Getitem(dmethods_seq, i);
@@ -2009,6 +2010,7 @@ public:
           Printf(proxy_class_code, "SwigDirector%s_Dispatcher", overname);
         }
         Printf(proxy_class_code, ");\n  }\n");
+	Printf(proxy_class_code, "#endif\n");
       }
 
 
