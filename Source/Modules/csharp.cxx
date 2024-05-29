@@ -4017,7 +4017,7 @@ public:
     Swig_typemap_attach_parms("directorargout", l, w);
       if (mono_aot_compatibility_flag && !ignored_method) {
         Printf(callback_mono_aot_def, "\n  [%s.MonoPInvokeCallback(typeof(SwigDelegate%s_%s_Dispatcher))]\n", imclass_name, classname, methid);
-        if(strcmp(tm, "string") == 0)
+        if(strcmp((const char*)tm, "string") == 0)
         {
           Printf(callback_mono_aot_def, "  private static global::System.IntPtr SwigDirector%s_Dispatcher(", overloaded_name);
           mono_aot_fix_return_type = true;
