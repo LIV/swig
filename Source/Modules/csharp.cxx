@@ -4177,7 +4177,7 @@ public:
         {
           if(Cmp(tm, "string") == 0){
             Printf(mono_aot_blitable_delegate_parms, "%s%s %s", im_directorinattributes ? im_directorinattributes : empty_string, "global::System.IntPtr", ln);
-            Printf(mono_aot_dispatcher_parms, "global::System.Runtime.InteropServices.Marshal.PtrToStringUTF8(%s)", ln);
+            Printf(mono_aot_dispatcher_parms, "global::System.Runtime.InteropServices.Marshal.PtrToStringAnsi(%s)", ln);
           }
           else
           {
